@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>프로젝트 소개 | 백호</title>
+    <meta
+      name="description"
+      content="백호는 설명형 피싱 분석기를 지향하며, 이번 학기 MVP인 이메일 중심 분석 범위와 이후 확장 방향을 함께 소개합니다."
+    />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="백호" />
+    <meta property="og:url" content="https://baekho.app/phishshield" />
+    <meta property="og:title" content="프로젝트 소개 | 백호" />
+    <meta
+      property="og:description"
+      content="백호는 설명형 피싱 분석기를 지향하며, 이번 학기 MVP인 이메일 중심 분석 범위와 이후 확장 방향을 함께 소개합니다."
+    />
+    <meta
+      property="og:image"
+      content="https://baekho.app/demo-assets/public/social/baekho-home-social-preview.jpg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://baekho.app/demo-assets/public/social/baekho-home-social-preview.jpg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="2848" />
+    <meta property="og:image:height" content="1504" />
+    <meta
+      property="og:image:alt"
+      content="백호 피싱 분석기 링크 공유용 썸네일 이미지"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="프로젝트 소개 | 백호" />
+    <meta
+      name="twitter:description"
+      content="백호는 설명형 피싱 분석기를 지향하며, 이번 학기 MVP인 이메일 중심 분석 범위와 이후 확장 방향을 함께 소개합니다."
+    />
+    <meta
+      name="twitter:image"
+      content="https://baekho.app/demo-assets/public/social/baekho-home-social-preview.jpg"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="백호 피싱 분석기 링크 공유용 썸네일 이미지"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/demo-assets/assets/branding/favicons/favicon.ico"
+    />
+    <link
+      rel="shortcut icon"
+      href="/demo-assets/assets/branding/favicons/favicon.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/demo-assets/assets/branding/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/demo-assets/assets/branding/favicons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/demo-assets/assets/branding/favicons/apple-icon-180x180.png"
+    />
+    <link
+      rel="manifest"
+      href="/demo-assets/assets/branding/favicons/manifest.json"
+    />
+    <meta
+      name="msapplication-config"
+      content="/demo-assets/assets/branding/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#081f30" />
+    <link rel="stylesheet" href="/demo-assets/home.css" />
+  </head>
+  <body class="site-body">
+    <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="/">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-copy">
+            <strong>백호</strong>
+            <small>baekho.app · 피싱 분석기</small>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="주요 메뉴">
+          <a href="/#top">홈</a>
+          <a href="/demo">데모</a>
+          <a href="/#phishshield" aria-current="page">피싱 분석기</a>
+          <a href="/#tech">기술</a>
+          <a href="/#updates">진행 기록</a>
+        </nav>
+      </header>
+
+      <main id="main-content" tabindex="-1">
+        <section class="subpage-hero">
+          <div class="subpage-hero-shell">
+            <div class="subpage-hero-main">
+              <div class="eyebrow-pill">
+                <span class="eyebrow-dot"></span>
+                <span>프로젝트 프로토콜 / 개요</span>
+              </div>
+              <p class="section-kicker">프로젝트 소개</p>
+              <h1>설명 가능한 피싱 분석 프로젝트, 백호</h1>
+              <p class="subpage-hero-lead">
+                백호는 장기적으로 이메일, URL, 문자/메신저 같은 사회공학형
+                입력을 설명 가능한 근거로 풀어주는 피싱 분석기를 지향합니다.
+                다만 이번 학기에는 가장 구조화된 입력인 이메일과 URL 분석을
+                중심으로, 어떤 신호가 왜 문제였는지와 어떤 대응이 필요한지를
+                먼저 이해시키는 데 초점을 둡니다.
+              </p>
+              <div class="badge-row">
+                <span class="badge">상위 비전: 설명형 피싱 분석기</span>
+                <span class="badge">이번 학기 MVP: 이메일 중심</span>
+                <span class="badge">헤더·본문·URL·첨부 분해 분석</span>
+                <span class="badge">점수보다 근거 우선</span>
+                <span class="badge">다음 확장: 문자·메신저 스미싱</span>
+              </div>
+              <div class="subpage-actions">
+                <a class="button button-secondary" href="/#phishshield"
+                  >랜딩 요약으로 돌아가기</a
+                >
+                <a class="button button-primary" href="/demo">데모 열기</a>
+                <a class="button button-secondary" href="/#tech"
+                  >기술 설명 보기</a
+                >
+              </div>
+              <p class="subpage-hero-note">
+                현재 범위는 상용 차단 플랫폼이 아니라, `연구·발표에 적합한
+                설명형 분석 흐름`을 만드는 것입니다. 그래서 이 소개 페이지도
+                기능 나열보다 문제 정의, 해석 방식, MVP 경계를 함께 읽히도록
+                정리했습니다.
+              </p>
+            </div>
+
+            <aside class="subpage-hero-panel" aria-label="프로젝트 범위 요약">
+              <span class="subpage-panel-label">상위 방향 / 이번 학기 MVP</span>
+              <strong>피싱 분석기 비전, 이메일 중심 1단계 구현</strong>
+              <p>
+                사용자가 실제로 마주치는 피싱 위험을 설명 가능한 근거로 풀어
+                보여주는 방향을 잡고 있습니다. 현재는 이메일과 링크를 중심으로
+                투명한 결과 화면과 발표 가능한 시연 흐름을 핵심 산출물로 둡니다.
+              </p>
+              <div class="subpage-stat-grid">
+                <article class="subpage-stat">
+                  <span>이번 학기 MVP</span>
+                  <strong>이메일 4계층 분석</strong>
+                  <p>
+                    헤더, 본문/HTML, URL, 첨부파일을 따로 읽고 다시 합칩니다.
+                  </p>
+                </article>
+                <article class="subpage-stat">
+                  <span>다음 확장</span>
+                  <strong>문자·메신저 입력</strong>
+                  <p>
+                    스미싱 텍스트와 생활형 사칭 문맥을 설명하는 채널별 확장을
+                    다음 단계로 둡니다.
+                  </p>
+                </article>
+              </div>
+              <div class="subpage-signal-row" aria-label="대표 범위">
+                <span class="subpage-signal">이메일</span>
+                <span class="subpage-signal">URL</span>
+                <span class="subpage-signal">첨부파일</span>
+                <span class="subpage-signal">스미싱 로드맵</span>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="wide-panel">
+          <div class="section-head">
+            <p class="section-kicker">핵심 구조</p>
+            <h2>백호가 먼저 해결하려는 문제</h2>
+            <p>
+              사용자가 피싱 메일을 보더라도 왜 위험한지 설명을 받지 못한 채
+              클릭이나 파일 실행을 하게 되는 지점을 겨냥합니다. 그래서 시스템
+              구조도 `분해 분석`, `설명 가능한 결과`, `발표 가능한 데모 흐름`을
+              중심으로 짜고 있습니다.
+            </p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <span class="feature-index">01</span>
+              <h3>문제 정의</h3>
+              <p>
+                사용자는 피싱 여부보다 `왜 위험한지`를 먼저 이해해야 하지만,
+                기존 화면은 그 설명이 비어 있는 경우가 많습니다.
+              </p>
+              <ul class="feature-points">
+                <li>링크 클릭 전 경고 근거 부족</li>
+                <li>메일 문맥과 기술 신호가 분리되어 보임</li>
+              </ul>
+            </article>
+            <article class="feature-card">
+              <span class="feature-index">02</span>
+              <h3>핵심 접근</h3>
+              <p>
+                헤더, 본문/HTML, URL, 첨부파일을 각각의 단위로 나눠 읽고 다시 한
+                화면에서 조합합니다.
+              </p>
+              <ul class="feature-points">
+                <li>컴포넌트별 위험 신호 분리</li>
+                <li>최종 결과에서 근거와 대응 함께 제시</li>
+              </ul>
+            </article>
+            <article class="feature-card">
+              <span class="feature-index">03</span>
+              <h3>현재 위치</h3>
+              <p>
+                상용 서비스가 아니라 캡스톤 기반의 시연 가능한 MVP이며, 이번
+                학기에는 이메일 분석 축의 설명 가능성과 투명성을 먼저 다듬는
+                단계입니다.
+              </p>
+              <ul class="feature-points">
+                <li>발표와 실험을 위한 공개 데모</li>
+                <li>과장보다 범위 명시를 우선</li>
+              </ul>
+            </article>
+            <article class="feature-card">
+              <span class="feature-index">04</span>
+              <h3>보여주고 싶은 가치</h3>
+              <p>
+                단순한 악성 판정이 아니라, 사용자가 실제로 주의해야 할 패턴을
+                읽게 만드는 보안 경험을 목표로 합니다.
+              </p>
+              <ul class="feature-points">
+                <li>근거 기반 해석</li>
+                <li>발표 가능한 시각적 흐름</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="wide-panel">
+          <div class="section-head">
+            <p class="section-kicker">이번 학기 MVP 범위</p>
+            <h2>지금 구현에서 분명히 다루는 것</h2>
+            <p>
+              현재 백호는 분석기를 실제로 시연하고 설명 가능한 결과를 검증하기
+              위한 범위에 집중합니다. 아래 범위는 현재 레포와 데모가 직접
+              뒷받침하는 내용만 남겨 정리한 것입니다.
+            </p>
+          </div>
+          <div class="badge-row">
+            <span class="badge">헤더 위험 점검</span>
+            <span class="badge">본문/HTML 유도 신호 분석</span>
+            <span class="badge">URL 의심 점수화</span>
+            <span class="badge">첨부파일 정적 가드</span>
+            <span class="badge">설명형 리포트 출력</span>
+          </div>
+          <div class="split-section">
+            <article class="split-card">
+              <p class="section-kicker">현재 가능한 일</p>
+              <h2>설명형 분석 결과를 만든다</h2>
+              <ul class="page-list">
+                <li>헤더, 본문, URL, 첨부 신호를 함께 보여주는 결과 화면</li>
+                <li>위험 점수와 함께 탐지된 근거와 대응 방향 제시</li>
+                <li>발표와 시연에 바로 활용 가능한 데모 동선</li>
+              </ul>
+            </article>
+            <article class="split-card muted-card">
+              <p class="section-kicker">현재 포함하지 않는 일</p>
+              <h2>운영형 차단 서비스는 아직 아님</h2>
+              <ul class="page-list">
+                <li>조직 전체 메일 게이트웨이 차단 정책</li>
+                <li>대규모 실시간 운영 보안 플랫폼</li>
+                <li>동적 샌드박스 실행과 자동 대응 체계</li>
+              </ul>
+            </article>
+          </div>
+          <p class="muted-note">
+            현재 범위는 `연구/발표에 적합한 설명형 분석기`이며, 운영형 보안
+            플랫폼 수준의 차단 서비스는 아직 목표 범위에 포함하지 않습니다.
+          </p>
+        </section>
+
+        <section class="wide-panel">
+          <div class="section-head">
+            <p class="section-kicker">현재 데이터 구조</p>
+            <h2>백호는 세 갈래 데이터를 다르게 씁니다</h2>
+            <p>
+              발표와 튜닝에서 자주 헷갈리는 부분을 줄이기 위해, 현재는 `공개
+              코퍼스`, `동의 기반 실메일`, `자발적 제보`의 역할을 분리해서
+              운영합니다.
+            </p>
+          </div>
+          <div class="info-grid">
+            <article class="info-card">
+              <h3>공개 코퍼스</h3>
+              <p>
+                초기 파이프라인 점검, 룰 설계, 대략적인 기준선 확인에
+                사용합니다. 규모는 크지만 실제 생활권 맥락은 제한적일 수
+                있습니다.
+              </p>
+            </article>
+            <article class="info-card">
+              <h3>동의 기반 실메일</h3>
+              <p>
+                가족과 본인 메일처럼 동의를 전제로 받은 실제 메일은 오탐과
+                회색지대 튜닝에 더 직접적으로 도움이 됩니다.
+              </p>
+            </article>
+            <article class="info-card">
+              <h3>자발적 제보</h3>
+              <p>
+                실제 의심 사례와 설명 가능한 발표 근거를 확보하는 채널입니다.
+                제보 UX와 비식별 안내를 함께 보강하는 이유도 여기에 있습니다.
+              </p>
+            </article>
+          </div>
+          <div class="muted-note">
+            현재 단계에서 synthetic 보강은 주 수집 경로가 아니라, 부족한 표현과
+            업무형 제목 패턴을 메우는 제한적 보조 수단으로만 다룹니다.
+          </div>
+        </section>
+
+        <section class="split-section">
+          <article class="split-card">
+            <p class="section-kicker">튜닝 우선순위</p>
+            <h2>현재 먼저 구분하는 사례</h2>
+            <ul class="page-list">
+              <li>대표 피싱 또는 강한 의심 사례</li>
+              <li>정상인지 악성인지 애매한 회색지대 사례</li>
+              <li>정상 프로모션, 알림, 거래 안내 메일</li>
+            </ul>
+          </article>
+          <article class="split-card">
+            <p class="section-kicker">오탐 관리</p>
+            <h2>지금 먼저 줄이는 정상 패턴</h2>
+            <ul class="page-list">
+              <li>IP click tracker가 붙은 마케팅 메일</li>
+              <li>개인정보 처리방침, 이용내역 안내 메일</li>
+              <li>거래 영수증, 고객상담 회신 같은 정상 안내</li>
+              <li>뉴스레터와 오래된 HTTP 기반 프로모션 메일</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="split-section">
+          <article class="split-card">
+            <p class="section-kicker">선택한 방향</p>
+            <h2>왜 설명 가능성을 앞에 두는가</h2>
+            <p>
+              상용 솔루션 전체를 복제하기보다, 사용자에게 근거와 맥락을 이해시켜
+              주는 프로젝트가 학술적, 발표적 가치가 더 크다고 판단했습니다.
+            </p>
+            <ul class="page-list">
+              <li>설명 가능성 강화</li>
+              <li>근거 중심 결과 화면</li>
+              <li>국내 업무 문맥 확장 가능성</li>
+            </ul>
+          </article>
+          <article class="split-card muted-card">
+            <p class="section-kicker">다음 확장</p>
+            <h2>이후 자연스러운 다음 단계</h2>
+            <p>
+              다음 단계는 정확도 개선과 함께, 이메일 바깥 입력 채널로 범위를
+              조심스럽게 넓히는 일입니다.
+            </p>
+            <ul class="page-list">
+              <li>룰 외부화와 규칙 체계 정리</li>
+              <li>한국형 업무 문맥 규칙 팩 추가</li>
+              <li>문자·메신저 스미싱 텍스트 분석과 모바일 입력 흐름 검토</li>
+              <li>발표·기록용 사이트를 실제 포트폴리오형 허브로 확장</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="wide-panel">
+          <h2>빠른 이동</h2>
+          <div class="quick-links">
+            <a href="/demo">데모 열기</a>
+            <a href="/#tech">기술 설명 보기</a>
+            <a href="/updates">진행 기록 보기</a>
+            <a href="/report">제보 안내 보기</a>
+            <a href="/contact">문의 페이지 보기</a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

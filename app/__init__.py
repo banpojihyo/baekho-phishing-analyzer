@@ -1,0 +1,2 @@
+"""PhishShield Analyzer package."""
+

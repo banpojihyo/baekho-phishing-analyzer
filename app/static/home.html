@@ -1,0 +1,846 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>백호 | 피싱 분석기</title>
+    <meta
+      name="description"
+      content="백호는 이메일과 의심 링크를 근거 중심으로 분석해, 사용자가 행동하기 전에 위험 사유와 대응 판단을 이해하도록 돕는 설명형 피싱 분석 도구입니다."
+    />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="백호" />
+    <meta property="og:url" content="https://baekho.app/" />
+    <meta property="og:title" content="백호 | 설명 가능한 피싱 분석" />
+    <meta
+      property="og:description"
+      content="백호는 이메일과 의심 링크를 근거 중심으로 분석해, 사용자가 행동하기 전에 위험 사유와 대응 판단을 이해하도록 돕는 설명형 피싱 분석 도구입니다."
+    />
+    <meta
+      property="og:image"
+      content="https://baekho.app/demo-assets/public/social/baekho-home-social-preview.jpg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://baekho.app/demo-assets/public/social/baekho-home-social-preview.jpg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="2848" />
+    <meta property="og:image:height" content="1504" />
+    <meta
+      property="og:image:alt"
+      content="백호 피싱 분석기 링크 공유용 썸네일 이미지"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="백호 | 설명 가능한 피싱 분석" />
+    <meta
+      name="twitter:description"
+      content="백호는 이메일과 의심 링크를 근거 중심으로 분석해, 사용자가 행동하기 전에 위험 사유와 대응 판단을 이해하도록 돕는 설명형 피싱 분석 도구입니다."
+    />
+    <meta
+      name="twitter:image"
+      content="https://baekho.app/demo-assets/public/social/baekho-home-social-preview.jpg"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="백호 피싱 분석기 링크 공유용 썸네일 이미지"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/demo-assets/assets/branding/favicons/favicon.ico"
+    />
+    <link
+      rel="shortcut icon"
+      href="/demo-assets/assets/branding/favicons/favicon.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/demo-assets/assets/branding/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/demo-assets/assets/branding/favicons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/demo-assets/assets/branding/favicons/apple-icon-180x180.png"
+    />
+    <link
+      rel="manifest"
+      href="/demo-assets/assets/branding/favicons/manifest.json"
+    />
+    <meta
+      name="msapplication-config"
+      content="/demo-assets/assets/branding/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#081f30" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&family=Space+Grotesk:wght@500;700&family=Material+Symbols+Outlined:FILL@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/demo-assets/home.css" />
+  </head>
+  <body class="site-body landing-page">
+    <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <a class="brand brand-wordmark" href="/">
+            <span class="brand-title">백호</span>
+            <span class="brand-badge">피싱 분석기</span>
+          </a>
+
+          <nav class="site-nav" aria-label="주요 메뉴">
+            <a href="/#top" aria-current="page" data-nav-section="top">홈</a>
+            <a href="/demo">데모</a>
+            <a href="/report">제보</a>
+            <a href="/#tech" data-nav-section="tech">기술</a>
+            <a href="/#updates" data-nav-section="updates">운영 근거</a>
+          </nav>
+
+          <div class="topbar-actions">
+            <a class="button button-primary button-compact" href="/demo"
+              >분석 시작</a
+            >
+          </div>
+        </div>
+      </header>
+
+      <main class="landing-main" id="main-content" tabindex="-1">
+        <section class="hero-panel" id="top">
+          <div class="hero-inner">
+            <div class="hero-copy">
+              <div class="eyebrow-pill">
+                <span>설명 가능한 피싱 분석 도구</span>
+              </div>
+              <h1>
+                <span class="headline-line">피싱 위험을,</span>
+                <span class="headline-line hero-emphasis"
+                  >행동 전에 설명합니다.</span
+                >
+              </h1>
+              <p class="hero-lead">
+                이메일과 의심 링크를 분석해, 클릭 전에 왜 위험한지 먼저
+                보여줍니다. 현재 공개 분석은 <code>.eml</code>과 URL에
+                집중합니다.
+              </p>
+              <div class="hero-highlights" aria-label="핵심 요약">
+                <span>현재 공개 분석: <code>.eml</code> · URL</span>
+                <span>헤더·본문·URL·첨부 신호 결합</span>
+                <span>근거 중심 리포트와 대응 가이드</span>
+              </div>
+              <div class="hero-actions" aria-label="주요 동작">
+                <a class="button button-primary" href="/demo">분석 시작</a>
+                <a class="button button-secondary" href="/report"
+                  >제보 안내 보기</a
+                >
+              </div>
+            </div>
+
+            <aside class="analysis-console" aria-label="분석 예시 패널">
+              <div class="console-header">
+                <div class="console-dots" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <span class="console-badge">baekho.analyzer / 실행 중</span>
+              </div>
+
+              <div class="console-metrics" aria-label="핵심 분석 지표">
+                <article class="console-metric console-metric-primary">
+                  <span class="console-label">종합 위험 점수</span>
+                  <strong>82<span>/100</span></strong>
+                </article>
+                <article class="console-metric console-metric-verdict">
+                  <span class="console-label">최종 판단</span>
+                  <strong>사용자 확인 전 차단 권고</strong>
+                  <p>
+                    브랜드 유사 도메인, 긴급 행동 유도, 회신 주소 불일치가 함께
+                    나타납니다.
+                  </p>
+                </article>
+              </div>
+
+              <div class="console-status">
+                <div>
+                  <span class="console-label">분석 대상</span>
+                  <strong>payment-alert.eml</strong>
+                </div>
+                <span class="console-score">위험 82 / 높음</span>
+              </div>
+
+              <div class="console-alert">
+                <strong
+                  >긴급 대응 유도와 도메인 위장이 함께 탐지됐습니다.</strong
+                >
+                <p>
+                  Reply-To 불일치, 로그인 재인증 링크, 과도한 긴급 표현이 동시에
+                  나타납니다.
+                </p>
+              </div>
+
+              <div class="console-signal-row" aria-label="대표 탐지 신호">
+                <span class="console-signal">SPF 실패</span>
+                <span class="console-signal">Reply-To 불일치</span>
+                <span class="console-signal">유사 도메인</span>
+                <span class="console-signal">즉시 인증 유도</span>
+              </div>
+
+              <div class="console-grid">
+                <article class="console-card">
+                  <span>헤더</span>
+                  <strong>Reply-To 불일치</strong>
+                  <p>표시 발신자와 실제 회신 주소가 서로 다릅니다.</p>
+                </article>
+                <article class="console-card">
+                  <span>본문</span>
+                  <strong>긴급 행동 유도</strong>
+                  <p>계정 잠금과 즉시 확인 문구가 반복됩니다.</p>
+                </article>
+                <article class="console-card">
+                  <span>URL</span>
+                  <strong>유사 도메인 위장</strong>
+                  <p>
+                    <code>ama-zon-secure-check</code> 형태의 브랜드 유사
+                    도메인이 나타납니다.
+                  </p>
+                </article>
+                <article class="console-card">
+                  <span>첨부</span>
+                  <strong>정적 검토 필요</strong>
+                  <p>첨부 형식과 본문 의도 사이의 불일치를 함께 점검합니다.</p>
+                </article>
+              </div>
+
+              <p class="console-footer">
+                최종 결과는 점수 하나가 아니라, 매칭 규칙과 권장 대응까지 함께
+                제시됩니다.
+              </p>
+            </aside>
+          </div>
+        </section>
+
+        <section class="trust-band" id="trust" aria-label="운영 기준">
+          <div class="trust-band-shell">
+            <div class="trust-band-intro">
+              <span class="trust-band-kicker">운영 기준</span>
+              <p>
+                자동 분석 범위, 수동 검토 경계, 비식별 제출 원칙을 먼저 공개해
+                제보와 데모의 신뢰 기준을 분명히 둡니다.
+              </p>
+            </div>
+            <div class="trust-band-grid" aria-label="현재 운영 기준">
+              <article class="trust-band-card">
+                <span class="trust-band-label">현재 공개 분석</span>
+                <strong><code>.eml</code> · URL</strong>
+                <p>데모와 바로 연결되는 현재 자동 분석 입력 형식입니다.</p>
+              </article>
+              <article class="trust-band-card">
+                <span class="trust-band-label">제보 가능 범위</span>
+                <strong>이메일 · 링크 · 문자·메신저</strong>
+                <p>
+                  문자와 메신저 자료는 수동 검토와 향후 확장 범위로 분리합니다.
+                </p>
+              </article>
+              <article class="trust-band-card">
+                <span class="trust-band-label">자료 보호</span>
+                <strong>비식별 제출 권장</strong>
+                <p>
+                  이름, 상세 연락처, 인증코드, 로그인 가능한 링크는 먼저 가린 뒤
+                  제출해도 됩니다.
+                </p>
+              </article>
+              <article class="trust-band-card">
+                <span class="trust-band-label">운영 경계</span>
+                <strong>실시간 차단기가 아닌 판단 지원</strong>
+                <p>
+                  행동 전에 한 번 더 확인하도록 돕는 설명형 분석 도구로
+                  운영합니다.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-block" id="phishshield">
+          <div class="section-head">
+            <h2>
+              <span class="headline-line">탐지 결과보다,</span>
+              <span class="headline-line"
+                ><span class="headline-highlight">판단 근거</span>를 먼저
+                정리합니다</span
+              >
+            </h2>
+            <p>
+              백호는 발신 신뢰, 본문 유도 표현, 링크 구조, 첨부 신호를 각각 읽은
+              뒤 하나의 설명형 결과로 다시 묶습니다. 보안 전공자가 아니어도 왜
+              위험한지 따라갈 수 있게 구성하는 것이 핵심입니다.
+            </p>
+            <div class="section-actions">
+              <a
+                class="button button-secondary button-compact"
+                href="/phishshield"
+                >분석 항목 자세히 보기</a
+              >
+            </div>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <span class="material-symbols-outlined feature-icon">route</span>
+              <h3>헤더 분석</h3>
+              <p>
+                From/Reply-To 불일치, 인증 실패, 전달 경로 이상 신호를
+                추적합니다.
+              </p>
+              <ul class="feature-points" aria-label="헤더 분석 신호 예시">
+                <li>회신 주소 위장</li>
+                <li>SPF·DKIM·DMARC 인증 실패</li>
+              </ul>
+            </article>
+            <article class="feature-card">
+              <span class="material-symbols-outlined feature-icon"
+                >visibility</span
+              >
+              <h3>본문 및 HTML 분석</h3>
+              <p>
+                숨은 링크, form action, meta refresh, 사회공학 표현을 함께
+                점검합니다.
+              </p>
+              <ul
+                class="feature-points"
+                aria-label="본문 및 HTML 분석 신호 예시"
+              >
+                <li>긴급 행동 유도 문구</li>
+                <li>숨은 리다이렉트와 로그인 유도</li>
+              </ul>
+            </article>
+            <article class="feature-card">
+              <span class="material-symbols-outlined feature-icon">link</span>
+              <h3>URL 분석</h3>
+              <p>
+                IP 호스트, 의심 TLD, userinfo 패턴, 브랜드 유사 도메인을
+                구조적으로 평가합니다.
+              </p>
+              <ul class="feature-points" aria-label="URL 분석 신호 예시">
+                <li>숫자·하이픈 기반 유사 도메인</li>
+                <li>userinfo·IP 호스트 패턴</li>
+              </ul>
+            </article>
+            <article class="feature-card">
+              <span class="material-symbols-outlined feature-icon"
+                >inventory_2</span
+              >
+              <h3>첨부파일 분석</h3>
+              <p>
+                확장자, MIME, magic bytes, HTML 로그인 흔적을 결합해 첨부
+                위험도를 정리합니다.
+              </p>
+              <ul class="feature-points" aria-label="첨부파일 분석 신호 예시">
+                <li>확장자와 실포맷 불일치</li>
+                <li>정적 로그인 페이지 흔적</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-block" id="tech">
+          <div class="section-head">
+            <h2>입력부터 대응 가이드까지 이어지는 분석 파이프라인</h2>
+            <p>
+              원본 입력을 정적 분석 신호와 권장 대응이 포함된 설명형 결과로
+              바꾸는 네 단계입니다.
+            </p>
+          </div>
+
+          <div class="step-grid">
+            <article class="step-card">
+              <span>01</span>
+              <h3>수집</h3>
+              <p>
+                사용자가 의심스러운 URL 또는 <code>.eml</code> 파일을 제출하면
+                필요한 입력 요소를 확보합니다.
+              </p>
+              <div class="step-meta">원본 입력 유지 · 대상 구조화</div>
+            </article>
+            <article class="step-card">
+              <span>02</span>
+              <h3>분해</h3>
+              <p>
+                헤더, 본문/HTML, URL, 첨부파일을 각각의 분석 단위로 분리합니다.
+              </p>
+              <div class="step-meta">컴포넌트 단위 신호 분리</div>
+            </article>
+            <article class="step-card">
+              <span>03</span>
+              <h3>평가</h3>
+              <p>
+                각 단위의 의심 신호와 규칙 매칭 결과를 점수화하고 상호 보강
+                관계를 반영합니다.
+              </p>
+              <div class="step-meta">정적 규칙 · 상호 보강 점수화</div>
+            </article>
+            <article class="step-card">
+              <span>04</span>
+              <h3>설명 가능한 결과</h3>
+              <p>
+                최종 위험도와 함께 왜 악성으로 분류되었는지, 어떤 대응이
+                필요한지 한 화면에서 제시합니다.
+              </p>
+              <div class="step-meta">판정 이유 · 대응 가이드 동시 제시</div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-block demo-preview" id="demo-preview">
+          <div class="section-head">
+            <h2>
+              기술 신호를 그대로 던지지 않고, 이해 가능한 리포트로 정리합니다
+            </h2>
+            <p>
+              실제 데모는 엔진 내부 신호를 그대로 나열하는 대신, 사용자가 먼저
+              읽어야 할 위험 근거와 권장 대응을 앞쪽에 배치합니다.
+            </p>
+            <p>
+              현재 공개 데모는 <code>URL 단건 + .eml 이메일 분석</code>을
+              지원하는 운영 버전입니다.
+            </p>
+          </div>
+
+          <div class="demo-shell">
+            <div class="demo-sidebar">
+              <h3>분석 패널</h3>
+
+              <div class="metric-block is-risk">
+                <span class="metric-label">고위험 경고</span>
+                <p>긴급 조치 요구와 발신 도메인 위장이 함께 탐지됐습니다.</p>
+              </div>
+
+              <div class="score-stack">
+                <div class="score-row">
+                  <span>발신 신뢰도</span>
+                  <strong>12%</strong>
+                </div>
+                <div class="score-bar">
+                  <span class="score-fill score-fill-risk"></span>
+                </div>
+              </div>
+
+              <div class="score-stack">
+                <div class="score-row">
+                  <span>문맥 신뢰도</span>
+                  <strong>41%</strong>
+                </div>
+                <div class="score-bar">
+                  <span class="score-fill score-fill-warn"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="demo-mail">
+              <div class="mail-surface">
+                <div class="mail-meta">
+                  <p>발신: <span>security-notice@k0rea-bank.com</span></p>
+                  <p>제목: <span>긴급 안내: 비정상 로그인 감지</span></p>
+                </div>
+                <div class="mail-body">
+                  <p>안녕하세요, 한국은행 보안팀입니다.</p>
+                  <p>
+                    최근 귀하의 계좌에서 익숙하지 않은 환경의 로그인 시도가
+                    발견되었습니다. 자산 보호를 위해 아래 버튼을 클릭하여 즉시
+                    본인 인증을 완료해 주시기 바랍니다.
+                  </p>
+                  <a class="mail-cta" href="/demo">지금 본인 확인하기</a>
+                  <p class="mail-note">
+                    백호 가이드: <code>k0rea-bank.com</code>은 숫자 0을 사용한
+                    유사 도메인입니다. 또한 은행은 이메일로 직접 비밀번호
+                    변경이나 링크 클릭을 요구하지 않습니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-actions demo-actions">
+            <a class="button button-primary" href="/demo">분석 시작</a>
+            <a class="button button-secondary" href="/report">제보 안내 보기</a>
+          </div>
+        </section>
+
+        <section class="section-block split-section">
+          <article class="split-card">
+            <p class="section-kicker">현재 공개 범위</p>
+            <h2>지금 바로 확인할 수 있는 것</h2>
+            <ul class="page-list">
+              <li>
+                <code>.eml</code> 원문을 기준으로 SPF, DKIM, DMARC 실패와 전달
+                경로 이상을 설명 가능한 근거로 정리합니다.
+              </li>
+              <li>
+                본문과 HTML 안의 숨은 링크, 리다이렉트, 사회공학 표현을 함께
+                점검합니다.
+              </li>
+              <li>
+                URL 구조와 첨부파일 정적 신호를 합쳐 최종 위험 점수와 대응
+                가이드를 제시합니다.
+              </li>
+            </ul>
+          </article>
+
+          <article class="split-card muted-card">
+            <p class="section-kicker">수동 검토와 확장</p>
+            <h2>아직 사람 판단이 필요한 것</h2>
+            <ul class="page-list">
+              <li>
+                문자와 메신저 본문, 캡처 제보는 현재 수동 검토와 향후 규칙 보강
+                자료로 분리합니다.
+              </li>
+              <li>
+                모바일 입력을 고려한 스크린샷 기반 OCR 연동과 스미싱 텍스트
+                분석은 다음 확장 범위입니다.
+              </li>
+              <li>
+                한국형 업무 문맥과 생활형 사칭 패턴을 포함한 채널별 규칙 팩은
+                단계적으로 넓혀갈 계획입니다.
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <p class="muted-note site-note">
+          백호는 상용 보안 게이트웨이 대체를 약속하지 않습니다. 대신 현재 가능한
+          정적 분석 범위와 아직 사람 검토가 필요한 범위를 분명히 공개합니다.
+        </p>
+
+        <section class="section-block" id="updates">
+          <div class="section-head center-head">
+            <h2>운영 근거와 검증 기록을 함께 공개합니다</h2>
+            <p>
+              제품처럼 보이더라도, 백호는 어떤 규칙을 검증했고 무엇을 아직 확장
+              중인지 숨기지 않습니다. 현재 공개 범위를 뒷받침하는 실험과 운영
+              흐름을 함께 남깁니다.
+            </p>
+            <div class="section-actions">
+              <a class="button button-secondary button-compact" href="/updates"
+                >검증 기록 자세히 보기</a
+              >
+            </div>
+          </div>
+
+          <div class="timeline-list">
+            <article class="timeline-entry">
+              <div class="timeline-date">
+                <span class="timeline-stamp">규칙 기반</span>
+              </div>
+              <div class="timeline-content">
+                <strong>초기 분석 엔진 구조 정리</strong>
+                <p>
+                  샘플 <code>.eml</code> 결과와 설명형 UI 방향을 묶어, 사람이
+                  따라갈 수 있는 정적 분석 흐름을 먼저 고정했습니다.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-entry">
+              <div class="timeline-date">
+                <span class="timeline-stamp">설명형 UI</span>
+              </div>
+              <div class="timeline-content">
+                <strong>언어 해석과 리포트 보강</strong>
+                <p>
+                  수집·평가 결과를 다시 읽고, 실메일과 코퍼스 차이를 설명 가능한
+                  근거와 대응 문장으로 정리했습니다.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-entry">
+              <div class="timeline-date">
+                <span class="timeline-stamp">공개 운영</span>
+              </div>
+              <div class="timeline-content current">
+                <strong>공개 웹 데모와 제보 흐름</strong>
+                <p>
+                  baekho.app 공개 구조, 제보 페이지, 발표 자료 패키지를 연결해
+                  실제 시연과 운영 동선을 다듬고 있습니다.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-block contribution-section" id="contribute">
+          <div class="section-head center-head">
+            <h2>도입 전에 확인할 수 있는 근거를 한곳에 모았습니다</h2>
+            <p>
+              코드, 기술 설명, 제보 정책을 따로 숨기지 않고 공개합니다. 이
+              랜딩은 단순한 소개 페이지가 아니라, 백호가 왜 이런 판단을 내리는지
+              스스로 검토해볼 수 있는 운영 허브입니다.
+            </p>
+          </div>
+
+          <div class="contribution-grid">
+            <article class="contribution-card">
+              <span class="material-symbols-outlined feature-icon">code</span>
+              <h3>GitHub</h3>
+              <p>
+                분석 파이프라인, 정적 룰, 문서화된 기록을 코드와 함께 확인할 수
+                있습니다.
+              </p>
+              <a
+                class="feature-link"
+                href="https://github.com/banpojihyo/baekho-phishing-analyzer"
+                target="_blank"
+                rel="noreferrer"
+                >저장소 보기</a
+              >
+            </article>
+            <article class="contribution-card">
+              <span class="material-symbols-outlined feature-icon"
+                >menu_book</span
+              >
+              <h3>기술 설명</h3>
+              <p>
+                분석 파이프라인과 페이지별 설명 문서를 통해 현재 공개 범위와
+                동작 방식을 확인할 수 있습니다.
+              </p>
+              <a class="feature-link" href="/#tech">기술 설명 보기</a>
+            </article>
+            <article class="contribution-card">
+              <span class="material-symbols-outlined feature-icon">mail</span>
+              <h3>제보 정책</h3>
+              <p>
+                제출 형식, 비식별 원칙, 처리 절차와 삭제 요청 가능 여부를 먼저
+                확인할 수 있습니다.
+              </p>
+              <a class="feature-link" href="/report">제보 안내 보기</a>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div>
+            <strong>백호 피싱 분석기</strong>
+            <p>
+              이메일과 의심 링크를 근거 중심으로 설명해, 사용자가 행동 전에
+              위험을 이해하도록 돕는 분석 도구입니다.
+            </p>
+          </div>
+          <div class="footer-links">
+            <a href="/#phishshield">피싱 분석기</a>
+            <a href="/#tech">기술 문서</a>
+            <a href="/report">제보 안내</a>
+            <a href="/#updates">운영 근거</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      (() => {
+        const navLinks = Array.from(
+          document.querySelectorAll(
+            ".landing-page .site-nav a[data-nav-section]",
+          ),
+        );
+        const scrollLinks = Array.from(
+          document.querySelectorAll(
+            '.landing-page a[href^="#"], .landing-page a[href^="/#"]',
+          ),
+        );
+        if (!navLinks.length) {
+          return;
+        }
+
+        const topbar = document.querySelector(".topbar");
+        const sectionMap = new Map(
+          navLinks
+            .map((link) => link.dataset.navSection || "")
+            .filter(Boolean)
+            .map((sectionId) => [
+              sectionId,
+              document.getElementById(sectionId),
+            ]),
+        );
+        const sections = Array.from(sectionMap.values()).filter(Boolean);
+
+        const getOffset = () => {
+          const topbarOffset = topbar
+            ? topbar.getBoundingClientRect().height
+            : 0;
+          return topbarOffset + 24;
+        };
+
+        const getHashSectionId = (href) => {
+          try {
+            const url = new URL(href, window.location.origin);
+            if (url.pathname !== "/") {
+              return "";
+            }
+            return url.hash.replace(/^#/, "");
+          } catch {
+            return "";
+          }
+        };
+
+        const setActiveLink = (sectionId) => {
+          navLinks.forEach((link) => {
+            if (link.dataset.navSection === sectionId) {
+              const currentValue = sectionId === "top" ? "page" : "location";
+              link.setAttribute("aria-current", currentValue);
+              return;
+            }
+            link.removeAttribute("aria-current");
+          });
+        };
+
+        const scrollToSection = (sectionId, options = {}) => {
+          const { behavior = "smooth", updateHash = true } = options;
+          const section = sectionMap.get(sectionId);
+          if (!section) {
+            return;
+          }
+
+          const targetTop =
+            sectionId === "top"
+              ? 0
+              : window.scrollY +
+                section.getBoundingClientRect().top -
+                getOffset();
+
+          window.scrollTo({
+            top: Math.max(targetTop, 0),
+            behavior,
+          });
+
+          if (updateHash) {
+            const nextHash = `#${sectionId}`;
+            const nextUrl = `${window.location.pathname}${nextHash}`;
+            window.history.replaceState(null, "", nextUrl);
+          }
+
+          setActiveLink(sectionId);
+        };
+
+        const syncToHash = (behavior = "auto") => {
+          const sectionId = window.location.hash.replace(/^#/, "");
+          if (!sectionMap.has(sectionId)) {
+            return false;
+          }
+          scrollToSection(sectionId, { behavior, updateHash: false });
+          return true;
+        };
+
+        const getActiveSection = () => {
+          const threshold = getOffset() + 12;
+          let activeSectionId = "top";
+
+          sections.forEach((section) => {
+            const sectionTop = section.getBoundingClientRect().top;
+            if (sectionTop - threshold <= 0) {
+              activeSectionId = section.id;
+            }
+          });
+
+          return activeSectionId;
+        };
+
+        let frameRequested = false;
+
+        const syncActiveState = () => {
+          frameRequested = false;
+          setActiveLink(getActiveSection());
+        };
+
+        const requestSync = () => {
+          if (frameRequested) {
+            return;
+          }
+          frameRequested = true;
+          window.requestAnimationFrame(syncActiveState);
+        };
+
+        scrollLinks.forEach((link) => {
+          link.addEventListener("click", (event) => {
+            const sectionId = getHashSectionId(link.getAttribute("href") || "");
+            if (sectionMap.has(sectionId)) {
+              event.preventDefault();
+              scrollToSection(sectionId);
+            }
+          });
+        });
+
+        window.addEventListener("scroll", requestSync, { passive: true });
+        window.addEventListener("resize", requestSync);
+        window.addEventListener("hashchange", () => {
+          if (!syncToHash("auto")) {
+            requestSync();
+          }
+        });
+        window.addEventListener("load", () => {
+          syncToHash("auto");
+          requestSync();
+        });
+        syncToHash("auto");
+        requestSync();
+      })();
+
+      (() => {
+        const searchParams = new URLSearchParams(window.location.search);
+        const motionTargets = Array.from(
+          document.querySelectorAll(
+            ".landing-page .trust-band-shell, .landing-page .section-head, .landing-page .hero-proof-card, .landing-page .analysis-console, .landing-page .console-card, .landing-page .feature-card, .landing-page .step-card, .landing-page .split-card, .landing-page .contribution-card",
+          ),
+        );
+        if (!motionTargets.length) {
+          return;
+        }
+
+        document.body.classList.add("js-motion");
+        motionTargets.forEach((node, index) => {
+          node.classList.add("motion-reveal");
+          node.style.setProperty(
+            "--reveal-delay",
+            `${Math.min(index * 45, 260)}ms`,
+          );
+        });
+
+        if (
+          searchParams.get("capture") === "1" ||
+          window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
+          typeof IntersectionObserver === "undefined"
+        ) {
+          motionTargets.forEach((node) => node.classList.add("is-visible"));
+          return;
+        }
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting) {
+                return;
+              }
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            });
+          },
+          {
+            threshold: 0.16,
+            rootMargin: "0px 0px -8% 0px",
+          },
+        );
+
+        motionTargets.forEach((node) => observer.observe(node));
+      })();
+    </script>
+  </body>
+</html>

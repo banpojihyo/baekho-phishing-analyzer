@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>자발적 제보 | 백호</title>
+    <meta
+      name="description"
+      content="백호는 동의 기반 자발적 제보를 통해 이메일, 의심 링크, 문자·메신저 피싱 사례를 수집합니다."
+    />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="백호" />
+    <meta property="og:url" content="https://baekho.app/report" />
+    <meta property="og:title" content="자발적 제보 | 백호" />
+    <meta
+      property="og:description"
+      content="백호는 동의 기반 자발적 제보를 통해 이메일, 의심 링크, 문자·메신저 피싱 사례를 수집합니다."
+    />
+    <meta
+      property="og:image"
+      content="https://baekho.app/demo-assets/public/social/baekho-home-social-preview.jpg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://baekho.app/demo-assets/public/social/baekho-home-social-preview.jpg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="2848" />
+    <meta property="og:image:height" content="1504" />
+    <meta
+      property="og:image:alt"
+      content="백호 피싱 분석기 링크 공유용 썸네일 이미지"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="자발적 제보 | 백호" />
+    <meta
+      name="twitter:description"
+      content="백호는 동의 기반 자발적 제보를 통해 이메일, 의심 링크, 문자·메신저 피싱 사례를 수집합니다."
+    />
+    <meta
+      name="twitter:image"
+      content="https://baekho.app/demo-assets/public/social/baekho-home-social-preview.jpg"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="백호 피싱 분석기 링크 공유용 썸네일 이미지"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/demo-assets/assets/branding/favicons/favicon.ico"
+    />
+    <link
+      rel="shortcut icon"
+      href="/demo-assets/assets/branding/favicons/favicon.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/demo-assets/assets/branding/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/demo-assets/assets/branding/favicons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/demo-assets/assets/branding/favicons/apple-icon-180x180.png"
+    />
+    <link
+      rel="manifest"
+      href="/demo-assets/assets/branding/favicons/manifest.json"
+    />
+    <meta
+      name="msapplication-config"
+      content="/demo-assets/assets/branding/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#081f30" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&family=Space+Grotesk:wght@500;700&family=Material+Symbols+Outlined:FILL@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/demo-assets/styles.css" />
+    <link rel="stylesheet" href="/demo-assets/home.css" />
+  </head>
+  <body class="site-body report-page aistudio-demo">
+    <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+    <div class="site-shell">
+      <header class="demo-topbar">
+        <div class="demo-topbar-inner">
+          <a class="demo-brand demo-brand-wordmark" href="/">
+            <span class="demo-brand-title">백호</span>
+            <span class="demo-brand-badge">피싱 분석기</span>
+          </a>
+
+          <nav class="demo-nav" aria-label="주요 메뉴">
+            <a href="/#top">홈</a>
+            <a href="/demo">데모</a>
+            <a href="/report" aria-current="page">제보</a>
+            <a href="/#tech">기술</a>
+            <a href="/#updates">운영 근거</a>
+          </nav>
+
+          <div class="demo-topbar-actions">
+            <a
+              class="demo-button demo-button-primary demo-topbar-button"
+              href="/demo"
+              >분석 시작</a
+            >
+          </div>
+        </div>
+      </header>
+
+      <main id="main-content" tabindex="-1">
+        <section class="subpage-hero">
+          <div class="subpage-hero-shell">
+            <div class="subpage-hero-main">
+              <div class="eyebrow-pill">
+                <span class="eyebrow-dot"></span>
+                <span>자발적 제보 / 사례 접수</span>
+              </div>
+              <p class="section-kicker">제보 안내</p>
+              <h1>동의 기반 피싱 사례 제보를 받습니다</h1>
+              <p class="subpage-hero-lead">
+                백호는 이메일 원문과 의심 링크뿐 아니라 문자·메신저 캡처와
+                비식별 텍스트까지 피싱 사례 제보를 받습니다. 다만 현재 공개 자동
+                분석은 <code>.eml</code>과 URL 중심으로 제공하고, 그 외 자료는
+                수동 검토와 향후 설명 규칙 보강을 위한 사례로 분리해 다룹니다.
+              </p>
+              <div class="subpage-actions">
+                <a
+                  class="button button-primary"
+                  href="mailto:geecbfdb@korea.ac.kr?subject=%5B%EB%B0%B1%ED%98%B8%20%EC%A0%9C%EB%B3%B4%5D%20%ED%94%BC%EC%8B%B1%20%EC%9D%98%EC%8B%AC%20%EC%82%AC%EB%A1%80%20%EA%B3%B5%EC%9C%A0"
+                  >이메일로 제보하기</a
+                >
+                <a class="button button-secondary" href="/contact"
+                  >문의 페이지 보기</a
+                >
+                <a class="button button-secondary" href="/demo">데모 열기</a>
+              </div>
+              <div class="badge-row">
+                <span class="badge">.eml 자동 분석 가능</span>
+                <span class="badge">URL 제보 가능</span>
+                <span class="badge">문자·메신저 캡처 가능</span>
+                <span class="badge">비식별 제출 권장</span>
+                <span class="badge">연구용 수동 검토 포함</span>
+              </div>
+              <p class="subpage-hero-note">
+                긴급 신고 창구처럼 보이기보다, `지금 되는 분석`, `가려도 되는
+                정보`, `제보 후 처리 흐름`을 먼저 보여 제출 전에 불안을 줄이는
+                방향으로 운영합니다.
+              </p>
+            </div>
+
+            <aside class="subpage-hero-panel" aria-label="제보 채널 요약">
+              <span class="subpage-panel-label">제보 채널 / 제출 안내</span>
+              <strong>제보 전 꼭 확인할 기준부터 먼저 공개합니다</strong>
+              <p>
+                백호는 상용 신고 센터가 아니라 연구와 발표 검증을 위한 보조 수집
+                구조를 전제로 운영합니다. 그래서 자동 분석 가능한 형식과 아직
+                수동 검토인 범위를 나눠 정직하게 안내합니다.
+              </p>
+              <div class="subpage-stat-grid">
+                <article class="subpage-stat">
+                  <span>현재 자동 분석</span>
+                  <strong><code>.eml</code> · URL</strong>
+                  <p>현재 공개 데모와 직접 연결되는 입력 형식입니다.</p>
+                </article>
+                <article class="subpage-stat">
+                  <span>수동 검토 대상</span>
+                  <strong>문자·메신저·캡처</strong>
+                  <p>향후 채널 확장과 설명 규칙 보강을 위한 사례로 받습니다.</p>
+                </article>
+              </div>
+              <div class="subpage-signal-row" aria-label="제보 기준">
+                <span class="subpage-signal">이메일</span>
+                <span class="subpage-signal">의심 링크</span>
+                <span class="subpage-signal">문자·메신저</span>
+                <span class="subpage-signal">비식별 우선</span>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="report-summary-grid" aria-label="제보 핵심 기준 요약">
+          <article class="report-summary-card">
+            <span class="report-summary-label">현재 자동 분석</span>
+            <strong><code>.eml</code> · URL</strong>
+            <p>지금 공개 데모와 직접 연결되는 형식입니다.</p>
+          </article>
+          <article class="report-summary-card">
+            <span class="report-summary-label">추가 제보 범위</span>
+            <strong>문자 · 메신저 · 캡처</strong>
+            <p>현재는 수동 검토와 향후 데이터셋 보강용으로 분리합니다.</p>
+          </article>
+          <article class="report-summary-card">
+            <span class="report-summary-label">자료 보호</span>
+            <strong>비식별 제출 권장</strong>
+            <p>
+              이름, 상세 연락처, 인증코드, 로그인 가능한 링크는 먼저 가려도
+              됩니다.
+            </p>
+          </article>
+          <article class="report-summary-card">
+            <span class="report-summary-label">운영 경계</span>
+            <strong>실시간 관제·긴급 대응 아님</strong>
+            <p>
+              행동 전에 한 번 더 확인하도록 돕는 연구용 제출 안내와 분석 보강
+              구조입니다.
+            </p>
+          </article>
+        </section>
+
+        <section class="section-block report-flow-block">
+          <div class="section-head">
+            <p class="section-kicker">제보 프로세스</p>
+            <h2>제보는 이 순서로 처리됩니다</h2>
+            <p>
+              제보자가 해야 할 일과 백호가 내부에서 처리하는 단계를 분리해,
+              `보낸 뒤 어디에 쓰이는지 모르겠다`는 불안을 줄이는 구조로
+              정리했습니다.
+            </p>
+          </div>
+          <div class="report-flow-shell">
+            <div class="step-grid report-step-grid">
+              <article class="step-card report-step-card">
+                <span>1</span>
+                <h3>자료 유형 고르기</h3>
+                <p>
+                  <code>.eml</code>, 의심 URL, 문자·메신저 캡처, 비식별 텍스트
+                  중 가장 부담이 적은 형식을 고르면 됩니다.
+                </p>
+                <div class="step-meta">가장 쉬운 시작</div>
+              </article>
+              <article class="step-card report-step-card">
+                <span>2</span>
+                <h3>민감정보 먼저 확인</h3>
+                <p>
+                  수신자 이름, 상세 연락처, 인증코드, 로그인 가능한 링크처럼
+                  불안한 정보는 먼저 가리거나 제거해도 됩니다.
+                </p>
+                <div class="step-meta">비식별 우선</div>
+              </article>
+              <article class="step-card report-step-card">
+                <span>3</span>
+                <h3>이메일로 전송</h3>
+                <p>
+                  제목 앞에 <code>[백호 제보]</code>를 붙이고, 어떤 채널에서
+                  받았는지와 왜 수상했는지 한 줄만 적어 보내면 됩니다.
+                </p>
+                <div class="step-meta">제출 완료</div>
+              </article>
+              <article class="step-card report-step-card">
+                <span>4</span>
+                <h3>분석 또는 수동 검토 반영</h3>
+                <p>
+                  <code>.eml</code>과 URL은 현재 분석 흐름에 연결하고, 그 외
+                  자료는 수동 검토와 향후 설명 규칙 보강 사례로 분리합니다.
+                </p>
+                <div class="step-meta">익명 요약 활용 가능</div>
+              </article>
+            </div>
+
+            <aside class="report-status-panel" aria-label="제보 후 처리 요약">
+              <div class="report-status-header">
+                <div class="console-dots" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <span class="console-badge">submission flow / review</span>
+              </div>
+              <div class="report-status-list">
+                <article class="report-status-item">
+                  <span class="report-status-label">접수 분류</span>
+                  <strong>형식과 채널 확인</strong>
+                  <p>
+                    이메일, 링크, 문자·메신저 중 어떤 유형인지 먼저 정리합니다.
+                  </p>
+                </article>
+                <article class="report-status-item">
+                  <span class="report-status-label">비식별 검토</span>
+                  <strong>민감정보 제거 우선</strong>
+                  <p>
+                    공개에 적합하지 않은 정보와 로그인 가능한 링크는 먼저
+                    가립니다.
+                  </p>
+                </article>
+                <article class="report-status-item">
+                  <span class="report-status-label">분석 연결</span>
+                  <strong>자동 분석 또는 수동 검토</strong>
+                  <p>
+                    현재 지원 범위는 분석기에 연결하고, 나머지는 수동 검토로
+                    넘깁니다.
+                  </p>
+                </article>
+                <article class="report-status-item">
+                  <span class="report-status-label">공개 활용</span>
+                  <strong>원문 대신 익명 요약 사용</strong>
+                  <p>발표와 문서에는 요약된 사례와 집계 결과만 반영합니다.</p>
+                </article>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section-block report-privacy-block">
+          <div class="section-head">
+            <p class="section-kicker">개인정보 마스킹 가이드</p>
+            <h2>가려도 되는 것과 남겨야 하는 것을 먼저 나눕니다</h2>
+            <p>
+              교수님 피드백처럼, `이걸 올려도 괜찮나?`라는 불안이 제보를 가장
+              많이 막습니다. 그래서 report 페이지에서 바로 따라 할 수 있는
+              비식별 기준과 제출 직전 체크리스트를 같이 둡니다.
+            </p>
+          </div>
+          <div class="report-guidance-grid" aria-label="개인정보 비식별 안내">
+            <article class="detail-card-site report-guidance-card">
+              <h3>먼저 가려도 되는 정보</h3>
+              <ul class="page-list report-check-list">
+                <li>수신자 이름과 개인 식별이 쉬운 주소록 이름</li>
+                <li>상세 주소, 개인 전화번호, 내부 서명</li>
+                <li>주민번호, 계좌번호, 인증코드, 비밀번호</li>
+                <li>로그인 가능한 토큰·query가 붙은 긴 URL</li>
+              </ul>
+              <div class="report-inline-note">
+                분석과 무관한 개인 식별 정보는 먼저 제거해도 됩니다.
+              </div>
+            </article>
+            <article class="detail-card-site report-guidance-card">
+              <h3>남겨두면 분석에 도움이 되는 정보</h3>
+              <ul class="page-list report-check-list">
+                <li>발신자 주소와 표시 이름</li>
+                <li>메일 제목, 본문, 첨부 유무 또는 메시지 본문 캡처</li>
+                <li>의심 링크와 연결 방식</li>
+                <li>분석에 필요한 헤더, 원문 구조, 대화 맥락 요약</li>
+              </ul>
+              <div class="report-inline-note">
+                `왜 수상했는지` 한 줄만 덧붙여도 수동 검토 속도가 훨씬
+                빨라집니다.
+              </div>
+            </article>
+            <article class="detail-card-site report-guidance-card">
+              <h3>업로드 직전 20초 체크리스트</h3>
+              <ul class="page-list report-check-list report-tight-list">
+                <li>자료 유형이 `.eml`, 링크, 캡처 중 무엇인지 적었는가</li>
+                <li>수신자 이름, 연락처, 서명은 가렸는가</li>
+                <li>URL에 토큰이나 개인 식별 query가 있으면 제거했는가</li>
+                <li>받은 채널과 의심 이유를 한 줄로 적었는가</li>
+              </ul>
+              <div class="report-inline-note">
+                판단에 필요한 구조는 남기고, 식별 정보만 줄이는 방향을
+                권장합니다.
+              </div>
+            </article>
+          </div>
+          <div class="report-mask-example" aria-label="개인정보 마스킹 예시">
+            <div class="report-mask-example-head">
+              <strong>마스킹 예시</strong>
+              <p>
+                아래처럼 `개인 식별 정보는 가리고`, `발신자·제목·문맥·의심
+                링크`는 남겨 두면 분석과 발표용 익명 요약에 모두 도움이 됩니다.
+              </p>
+            </div>
+            <div class="report-mask-compare">
+              <article class="report-mask-card">
+                <span class="report-mask-label">가리기 전</span>
+                <pre class="report-mask-pre">
+수신자: 홍길동 &lt;hong@example.com&gt;
+전화번호: 010-1234-5678
+제목: [긴급] 계정 인증 필요
+본문: 아래 링크에서 즉시 로그인해 주세요.
+URL: https://secure-login.example/verify?user=hong@example.com&amp;token=abc123</pre
+                >
+              </article>
+              <article class="report-mask-card report-mask-card-highlight">
+                <span class="report-mask-label">권장 제출 형태</span>
+                <pre class="report-mask-pre">
+수신자: &lt;가림&gt;
+전화번호: &lt;가림&gt;
+제목: [긴급] 계정 인증 필요
+본문: 아래 링크에서 즉시 로그인해 주세요.
+URL: https://secure-login.example/verify</pre
+                >
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="wide-panel report-template-panel">
+          <div class="section-head">
+            <p class="section-kicker">템플릿</p>
+            <h2>이 형식이면 바로 제보할 수 있습니다</h2>
+            <p>
+              형식이 꼭 같을 필요는 없지만, 아래 정도만 적어도 분류와 검토가
+              훨씬 빨라집니다. 가장 중요한 것은 `자료 유형`, `받은 채널`, `왜
+              수상했는지` 세 가지입니다.
+            </p>
+          </div>
+          <pre class="template-block">
+제목: [백호 제보] 피싱 의심 사례 공유
+
+본문 예시:
+- 자료 유형: 이메일 .eml / 의심 링크 / 문자·메신저 캡처 / 비식별 텍스트
+- 받은 채널: 이메일 / 문자 / 메신저 / 웹 링크
+- 의심 이유: 링크, 발신자, 첨부파일, 본문 표현, 사칭 방식 등
+- 첨부 형식: .eml / 링크 / 캡처본 / 비식별 텍스트</pre
+          >
+          <div class="quick-links">
+            <a
+              href="mailto:geecbfdb@korea.ac.kr?subject=%5B%EB%B0%B1%ED%98%B8%20%EC%A0%9C%EB%B3%B4%5D%20%ED%94%BC%EC%8B%B1%20%EC%9D%98%EC%8B%AC%20%EC%82%AC%EB%A1%80%20%EA%B3%B5%EC%9C%A0"
+              >이메일 보내기</a
+            >
+            <a href="/contact">일반 문의</a>
+            <a href="/demo">데모 열기</a>
+          </div>
+        </section>
+
+        <section class="section-block">
+          <div class="section-head">
+            <p class="section-kicker">메일 원문 제출 가이드</p>
+            <h2>이메일 제보는 이렇게 준비하면 됩니다</h2>
+            <p>
+              제보 범위는 넓게 열어 두었지만, 현재 자동 분석과 가장 직접
+              연결되는 형식은 여전히 <code>.eml</code>입니다. 서비스마다 메뉴
+              이름은 조금씩 다를 수 있지만, 아래 흐름만 기억하면 `원문 저장`
+              또는 `메일함 백업` 경로를 찾는 데 도움이 됩니다.
+            </p>
+          </div>
+          <div class="report-export-grid">
+            <article class="info-card report-export-card">
+              <div class="report-provider-header">
+                <h3>네이버 메일</h3>
+                <span class="report-provider-badge"
+                  >환경설정 &gt; 메일함관리 &gt; 백업</span
+                >
+              </div>
+              <ol class="report-provider-steps">
+                <li>
+                  <strong>환경설정으로 이동</strong>
+                  <p>
+                    네이버 메일에 들어간 뒤 `환경설정 &gt; 메일함관리`로
+                    이동합니다.
+                  </p>
+                </li>
+                <li>
+                  <strong>원하는 메일함에서 백업</strong>
+                  <p>
+                    `받은메일함`, `보낸메일함` 같은 행에서 `백업`을 누르고 zip
+                    파일을 생성합니다.
+                  </p>
+                </li>
+                <li>
+                  <strong>zip 다운로드 후 확인</strong>
+                  <p>
+                    팝업에서 zip을 내려받고 압축을 푼 뒤, 필요한 `.eml`만 골라
+                    보내면 됩니다.
+                  </p>
+                </li>
+              </ol>
+              <div class="report-inline-note">
+                Windows에서는 압축을 푼 폴더에서 `보기 &gt; 파일 확장명`을 켜고,
+                파일명 끝이
+                <code>.eml</code>인지 확인하면 됩니다. 보이지 않으면 폴더
+                검색창에 <code>*.eml</code>을 입력해 확인할 수 있습니다.
+              </div>
+            </article>
+            <article class="info-card report-export-card">
+              <div class="report-provider-header">
+                <h3>Gmail</h3>
+                <span class="report-provider-badge"
+                  >더보기 &gt; 메시지 다운로드</span
+                >
+              </div>
+              <ol class="report-provider-steps">
+                <li>
+                  <strong>메일 1건이면</strong>
+                  <p>
+                    Gmail에서 메일을 연 뒤 우측 상단 `더보기` 메뉴를 엽니다.
+                  </p>
+                </li>
+                <li>
+                  <strong>바로 저장</strong>
+                  <p>
+                    메뉴에서 `메시지 다운로드`를 누르면 현재 메일을 `.eml`로
+                    저장할 수 있습니다.
+                  </p>
+                </li>
+                <li>
+                  <strong>메일함 단위면</strong>
+                  <p>
+                    `Google Takeout`으로 전체를 내보낸 뒤, 발표용으로 필요한
+                    샘플만 추립니다.
+                  </p>
+                </li>
+              </ol>
+              <div class="report-inline-note">
+                Gmail은 메일 1건을 `.eml`로 바로 내려받을 수 있고, 메일함 전체
+                내보내기는 `Google Takeout`을 사용하면 됩니다. 메뉴 이름은 계정
+                언어 설정에 따라 영어 또는 번역된 형태로 보일 수 있습니다.
+              </div>
+            </article>
+            <article class="info-card report-export-card">
+              <div class="report-provider-header">
+                <h3>Outlook · Exchange</h3>
+                <span class="report-provider-badge">다른 이름으로 저장</span>
+              </div>
+              <ol class="report-provider-steps">
+                <li>
+                  <strong>메일 열기</strong>
+                  <p>
+                    `다른 이름으로 저장`, `메시지 원본 보기`, `다운로드` 계열
+                    메뉴를 찾습니다.
+                  </p>
+                </li>
+                <li>
+                  <strong>형식 확인</strong>
+                  <p>
+                    가능하면 헤더가 보존되는 형식을 우선 선택합니다. 본문 복사만
+                    보내는 방식은 지양합니다.
+                  </p>
+                </li>
+                <li>
+                  <strong>최소 메모 추가</strong>
+                  <p>
+                    `언제`, `어떤 채널`, `왜 수상했는지`를 짧게 적으면 수동
+                    검토가 쉬워집니다.
+                  </p>
+                </li>
+              </ol>
+            </article>
+          </div>
+          <div class="report-guidance-grid" aria-label="메일 내보내기 텍스트 안내">
+            <article class="detail-card-site report-guidance-card">
+              <h3>네이버 메일 요약</h3>
+              <ol class="report-provider-steps">
+                <li>
+                  <strong>메일 화면 열기</strong>
+                  <p>네이버 메인 또는 메일 서비스에서 필요한 메일함으로 이동합니다.</p>
+                </li>
+                <li>
+                  <strong>메일함관리 이동</strong>
+                  <p>환경설정의 `메일함관리`에서 원하는 메일함의 `백업`을 선택합니다.</p>
+                </li>
+                <li>
+                  <strong>.eml 확인</strong>
+                  <p>zip을 내려받아 압축을 풀고, 필요한 사례의 <code>.eml</code>만 골라 보냅니다.</p>
+                </li>
+              </ol>
+            </article>
+            <article class="detail-card-site report-guidance-card">
+              <h3>Gmail 요약</h3>
+              <ol class="report-provider-steps">
+                <li>
+                  <strong>메일 1건 선택</strong>
+                  <p>받은편지함에서 제보하려는 메일을 열고 우측 상단 더보기 메뉴를 찾습니다.</p>
+                </li>
+                <li>
+                  <strong>메시지 다운로드</strong>
+                  <p>`메시지 다운로드`를 선택해 현재 메일을 <code>.eml</code>로 저장합니다.</p>
+                </li>
+                <li>
+                  <strong>전체 내보내기</strong>
+                  <p>메일함 단위 내보내기가 필요하면 Google Takeout에서 필요한 범위만 선택합니다.</p>
+                </li>
+              </ol>
+            </article>
+            <article class="detail-card-site report-guidance-card">
+              <h3>공개 자료 원칙</h3>
+              <p>
+                실제 계정 화면 캡처는 공개 저장소와 공개 페이지에 올리지 않습니다.
+                안내 이미지는 추후 더미 계정 또는 비식별 mock 화면으로만 추가합니다.
+              </p>
+              <div class="report-inline-note">
+                지금은 텍스트 절차만 제공하고, 민감한 메일함 화면이나 계정 정보가
+                포함될 수 있는 원본 스크린샷은 제외합니다.
+              </div>
+            </article>
+          </div>
+          <div class="muted-note">
+            메뉴명이 정확히 일치하지 않을 수 있습니다. 가장 중요한 기준은
+            `본문만 복사`가 아니라 `헤더와 원문 구조가 남는 저장 방식`을 찾는
+            것입니다. 메일함 전체를 보내기 부담스럽다면, `대표 샘플 1건만`
+            보내도 충분합니다. 네이버 메일 백업은 `zip 다운로드 -> 압축 해제 ->
+            .eml 확인` 순서로 이해하면 가장 쉽습니다.
+          </div>
+        </section>
+
+        <section class="detail-grid-site">
+          <article class="detail-card-site">
+            <h3>익명 보호 원칙</h3>
+            <ul class="page-list">
+              <li>원문 전체를 공개 자료에 그대로 싣지 않습니다.</li>
+              <li>
+                개인정보와 로그인 가능한 링크는 비식별 또는 제거를 우선합니다.
+              </li>
+              <li>요청이 있으면 보관 중인 자료의 삭제를 검토합니다.</li>
+              <li>
+                이 채널은 수업·연구 목적의 자발적 제보 창구이며, 상용 고객센터나
+                수사기관 신고 창구는 아닙니다.
+              </li>
+            </ul>
+          </article>
+          <article class="detail-card-site">
+            <h3>제보가 실제로 도움이 되는 방식</h3>
+            <ul class="page-list">
+              <li>광고성 메일이 과탐되는 이유를 줄이는 규칙 튜닝</li>
+              <li>정상 안내와 회색지대 메일을 구분하는 라벨링 기준 보정</li>
+              <li>
+                의심 링크와 생활형 사칭 패턴을 발표와 보고서의 실제 사례로 연결
+              </li>
+              <li>
+                향후 공개 코퍼스로 보이지 않는 한국형 문자·메신저 문맥 보강
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="wide-panel">
+          <h2>현재 운영 기준 보관 정책</h2>
+          <ul class="page-list">
+            <li>
+              원문 파일은 공개 Git 저장소나 공개 발표 자료에 그대로 올리지
+              않습니다.
+            </li>
+            <li>
+              분석과 규칙 튜닝에 필요한 동안에만 로컬 비공개 작업 공간에서
+              검토합니다.
+            </li>
+            <li>
+              발표와 문서에는 원칙적으로 익명화된 요약, 근거, 집계 결과만
+              사용합니다.
+            </li>
+            <li>
+              문자·메신저 제보는 현재 자동 판정이 아니라 수동 검토/향후 보강
+              자료로 구분합니다.
+            </li>
+            <li>
+              삭제 요청이 들어오면 해당 자료를 우선 확인하고 제거를 검토합니다.
+            </li>
+          </ul>
+          <div class="muted-note">
+            백호는 상용 고객 데이터 플랫폼이 아니라 연구·발표 검증용 보조 수집
+            구조를 전제로 운영하고 있습니다. 그래서 `많이 받는 것`보다 `현재
+            되는 분석과 아직 수동 검토인 범위를 정직하게 설명하는 것`을
+            우선합니다.
+          </div>
+        </section>
+
+        <section class="split-section">
+          <article class="split-card">
+            <p class="section-kicker">익명 사례 예시</p>
+            <h2>광고성인데 high로 분류된 사례</h2>
+            <p>
+              유통사 프로모션 메일이 `HTTP`, `IP click tracker`, `긴 URL` 때문에
+              high로 잡힌 적이 있었습니다. 이런 사례는 제보가 들어와야 false
+              positive 패턴을 줄이는 데 직접 도움이 됩니다.
+            </p>
+          </article>
+          <article class="split-card muted-card">
+            <p class="section-kicker">익명 사례 예시</p>
+            <h2>문자·메신저 제보가 다음 확장에 도움이 되는 사례</h2>
+            <p>
+              택배, 금융, 기관 사칭 문자나 메신저 캡처는 지금 바로 자동
+              분석되지는 않더라도, 백호가 이후 생활형 피싱 문맥과 설명 규칙을
+              넓힐 때 가장 현실적인 보강 자료가 됩니다.
+            </p>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
